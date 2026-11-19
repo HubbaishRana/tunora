@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tunora: Offline Music Player with Equalizer &amp; Slowed Reverb</title>
+<meta name="description" content="Tunora is a free offline MP3 player for Android: play songs without internet, 10-band equalizer, bass booster, one-tap slowed + reverb, sleep timer and playlists. Light enough for old phones.">
+<meta name="keywords" content="offline music player, mp3 player, music player without internet, slowed reverb, equalizer, bass booster, sleep timer, lofi music player, gaane sunne wala app">
+<link rel="canonical" href="https://hubbaishrana.github.io/tunora/">
+<meta name="theme-color" content="#0A0614">
+<link rel="icon" href="icon-512.png">
+
+<!-- Social previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tunora: Offline Music Player with Equalizer & Slowed Reverb">
+<meta property="og:description" content="Play the songs on your phone without internet. 10-band EQ, bass booster, one-tap slowed + reverb.">
+<meta property="og:image" content="https://hubbaishrana.github.io/tunora/feature-graphic.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Structured data: tells Google this page is about an Android app. No ratings are claimed. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Tunora - Offline Music Player",
+  "operatingSystem": "Android",
+  "applicationCategory": "MultimediaApplication",
+  "description": "Offline MP3 player with 10-band equalizer, bass booster, one-tap slowed + reverb, sleep timer, playlists and a home-screen widget. Plays files already on your device.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.tunora.tunora",
+  "image": "https://hubbaishrana.github.io/tunora/icon-512.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Can I play music without internet?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tunora plays the MP3 and audio files already saved on your phone or SD card. It never needs internet or mobile data."}},
+    {"@type": "Question", "name": "How do I make a song slowed and reverb?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Open any song in Tunora and tap Slowed. The song slows down, the pitch drops and a hall reverb is added. Tap again to go back to normal."}},
+    {"@type": "Question", "name": "Does Tunora download songs?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Tunora only plays audio files that are already on your device. It does not download or stream music."}},
+    {"@type": "Question", "name": "Will it work on an old or low-RAM phone?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tunora is lightweight, works on Android 7 and newer, and has no ads or background data use."}}
+  ]
+}
+</script>
+<style>
+  :root { --bg:#0A0614; --card:#17112A; --text:#fff; --dim:#A9A1C2; --a:#7B3FF2; --a2:#B794FF; }
+  * { box-sizing:border-box }
+  body { margin:0; background:radial-gradient(1200px 600px at 85% -10%, rgba(123,63,242,.35), transparent 60%), var(--bg);
+         color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 20px }
+  header { display:flex; align-items:center; gap:12px; padding:22px 0 }
+  header img { width:44px; height:44px; border-radius:12px }
+  header b { font-size:20px }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:40px 0 60px }
+  h1 { font-size:clamp(32px,5vw,52px); line-height:1.1; margin:0 0 16px; letter-spacing:-.02em }
+  h1 span { background:linear-gradient(90deg,var(--a2),#ff8ac2); -webkit-background-clip:text; background-clip:text; color:transparent }
+  .lead { color:var(--dim); font-size:18px; margin:0 0 28px }
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:14px 26px; border-radius:40px; color:#fff; text-decoration:none;
+         font-weight:600; background:linear-gradient(135deg,#9b6bff,var(--a)); box-shadow:0 10px 30px rgba(123,63,242,.45) }
+  .note { color:var(--dim); font-size:13px; margin-top:12px }
+  .phone { width:100%; height:auto; max-width:340px; justify-self:center; border-radius:36px; border:1px solid rgba(255,255,255,.12);
+           box-shadow:0 30px 80px rgba(123,63,242,.4) }
+  h2 { font-size:28px; margin:0 0 20px }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:60px }
+  .card { background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:22px }
+  .card h3 { margin:0 0 6px; font-size:17px }
+  .card p { margin:0; color:var(--dim); font-size:14.5px }
+  .shots { display:flex; gap:14px; overflow-x:auto; padding-bottom:12px; margin-bottom:60px }
+  .shots img { height:420px; border-radius:20px }
+  details { background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px 20px; margin-bottom:10px }
+  summary { cursor:pointer; font-weight:600 }
+  details p { color:var(--dim); margin:10px 0 0 }
+  footer { color:var(--dim); font-size:14px; padding:40px 0; border-top:1px solid rgba(255,255,255,.08); margin-top:60px }
+  footer a { color:var(--a2) }
+  @media (max-width:800px) { .hero { grid-template-columns:1fr } .grid { grid-template-columns:1fr } .shots img { height:340px } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="icon-512.png" alt="Tunora app icon"><b>Tunora</b></header>
+
+  <section class="hero">
+    <div>
+      <h1>Offline music player with <span>slowed + reverb</span></h1>
+      <p class="lead">Play the songs already on your phone, no internet needed. 10-band equalizer, bass booster, one-tap slowed + reverb and a sleep timer, in a player light enough for old phones.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tunora.tunora">Get it on Google Play</a>
+      <p class="note">Free · No account · No internet permission</p>
+    </div>
+    <img class="phone" src="app-now-playing.png" alt="Tunora now playing screen" width="1080" height="2400">
+  </section>
+
+  <h2>Everything your music needs, offline</h2>
+  <div class="grid">
+    <div class="card"><h3>Play music without internet</h3><p>Finds every MP3, M4A, FLAC, WAV and OGG song on your phone and SD card automatically.</p></div>
+    <div class="card"><h3>10-band equalizer</h3><p>Presets including Bollywood, Bhangra, Qawwali, Lofi and Bass Boost, or save your own.</p></div>
+    <div class="card"><h3>Bass &amp; volume booster</h3><p>Deeper bass and 3D surround for earbuds, headphones and Bluetooth speakers.</p></div>
+    <div class="card"><h3>Slowed + reverb in one tap</h3><p>Turn any song into a lofi slowed + reverb version. Speed 0.5x to 2x and pitch control.</p></div>
+    <div class="card"><h3>Sleep timer</h3><p>Fall asleep to music. Stops after a set time or the current song, with a gentle fade.</p></div>
+    <div class="card"><h3>Playlists &amp; widget</h3><p>Unlimited playlists, favourites, most played, plus home-screen and lock-screen controls.</p></div>
+  </div>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <img src="screenshot-1.png" alt="Now playing screen" loading="lazy">
+    <img src="screenshot-2.png" alt="10-band equalizer with presets" loading="lazy">
+    <img src="screenshot-3.png" alt="Slowed + reverb and speed control" loading="lazy">
+    <img src="screenshot-4.png" alt="All songs found automatically" loading="lazy">
+    <img src="screenshot-5.png" alt="Playlists and smart lists" loading="lazy">
+    <img src="screenshot-6.png" alt="Sleep timer" loading="lazy">
+  </div>
+
+  <h2>Questions</h2>
+  <details open><summary>Can I play music without internet?</summary><p>Yes. Tunora plays the MP3 and audio files already saved on your phone or SD card. It never needs internet or mobile data.</p></details>
+  <details><summary>How do I make a song slowed and reverb?</summary><p>Open any song in Tunora and tap Slowed. The song slows down, the pitch drops and a hall reverb is added. Tap again to go back to normal.</p></details>
+  <details><summary>Does Tunora download songs?</summary><p>No. Tunora only plays audio files that are already on your device. It does not download or stream music.</p></details>
+  <details><summary>Will it work on an old or low-RAM phone?</summary><p>Yes. Tunora is lightweight, works on Android 7 and newer, and has no ads or background data use.</p></details>
+
+  <footer>
+    © 2026 Tunora · <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:hubbaishrana@gmail.com">hubbaishrana@gmail.com</a><br>
+    Tunora plays audio files already stored on your device. It does not download or stream music.
+  </footer>
+</div>
+</body>
+</html>
